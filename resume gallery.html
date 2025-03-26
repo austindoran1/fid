@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Doran - Portfolio</title>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery a {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        /* Lightbox Styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .nav {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Austin Doran</h1>
+        <p><strong>Graphic Designer | Longwood, FL</strong></p>
+    </header>
+
+    </nav>
+
+    <section>
+        <h2>About Me</h2>
+        <p>My name is Austin Doran. I am a graphic designer currently studying at Seminole State College, with plans to transfer to UCF in the fall of 2025. My journey in design started with sim racing, where I have been creating custom liveries, logos, and graphics for clients for over four years. My eventual goal is to work in the motorsports field, creating designs that people will see out on the real race track. I enjoy photography, playing sports like soccer, and rock climbing. In addition to my studies, I work at Winn-Dixie part time as a grocery associate. I take pride in creating appealing designs that stand out from others. My goal is to blend boldness with something that the client is equally happy with. I look forward to growing as a designer and making an impact in the industry.</p>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>2019-2023: Lyman High School | High School Diploma </li>
+            <li>2023-present: Seminole State College | Associate in Arts degree</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Graphic Design (Adobe Phtotoshop, Gimp)</li>
+            <li>Branding & Logo Creation</li>
+            <li>Photography</li>
+            <li>Customer Service</li>
+            <li>Illustration</li>
+            <li>Content Creation</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <a href="javascript:void(0);" onclick="openLightbox('https://austindoran1.github.io/fid/jenskitchen/images/bear-4.webp')">
+                <img src="https://austindoran1.github.io/fid/jenskitchen/images/bear-4%20-%20Copy.jpg" alt="Bear Logo">
+            </a>
+            <a href="javascript:void(0);" onclick="openLightbox('https://austindoran1.github.io/fid/jenskitchen/images/lmgraphic%20(1).webp')">
+                <img src="https://austindoran1.github.io/fid/jenskitchen/images/lmgraphic%20(1).jpg" alt="LM Graphic">
+            </a>
+            <a href="javascript:void(0);" onclick="openLightbox('https://austindoran1.github.io/fid/jenskitchen/images/nbr-9.webp')">
+                <img src="https://austindoran1.github.io/fid/jenskitchen/images/nbr-9.jpg" alt="NBR 9">
+            </a>
+            <a href="javascript:void(0);" onclick="openLightbox('https://austindoran1.github.io/fid/jenskitchen/images/IMG_9335.webp')">
+                <img src="https://austindoran1.github.io/fid/jenskitchen/images/IMG_9335.jpg" alt="Photography">
+            </a>
+        </div>
+    </section>
+    
+
+    <section>
+        <h2>Social Media & Web</h2>
+        <ul>
+            <li><a href="https://austindgraphics.com" target="_blank">My Website</a></li>
+            <li><a href="https://www.linkedin.com/in/austin-doran-623267245/details/experience/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/austindgraphics" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+
+    <!-- Lightbox Structure -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- JavaScript for Lightbox -->
+    <script>
+        function openLightbox(imgSrc) {
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>
+
