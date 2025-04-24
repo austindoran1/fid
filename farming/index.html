@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future Farmers Club - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul.nav {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0 0 0;
+    }
+
+    nav ul.nav li a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    nav ul.nav li a:hover,
+    nav ul.nav li a.active {
+      background-color: #357a38;
+    }
+
+    main {
+      padding: 0;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      background-color: #eaf7e9;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      flex: 1;
+    }
+
+    .hero img {
+      flex: 1;
+      max-width: 100%;
+      border-radius: 12px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 2rem;
+      background-color: #ffffff;
+    }
+
+    .feature-card {
+      background-color: #f0fdf4;
+      padding: 1rem;
+      border: 1px solid #c8e6c9;
+      border-radius: 10px;
+      width: 30%;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 1rem 0;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #4CAF50;
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .feature-card {
+        width: 90%;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Future Farmers Club</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Empowering the Next Generation of Farmers</h2>
+        <p>Future Farmers Club is a youth-driven organization dedicated to agricultural education, sustainability, and innovation. Join us to grow your knowledge—and your crops!</p>
+      </div>
+      <img src="https://austindoran1.github.io/fid/farming/38195971_10155637254512555_8125522256479649792_n.jpg" alt="Young farmers in a field" />
+    </section>
+
+    <section class="features">
+      <div class="feature-card">
+        <h3>Education</h3>
+        <p>Hands-on workshops and mentorship from experienced growers to help students understand modern farming techniques.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Sustainability</h3>
+        <p>We teach eco-friendly farming methods and encourage sustainable practices in everything we do.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Community</h3>
+        <p>Build connections with peers and mentors in your community while making a positive impact on local food systems.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="mailto:info@futurefarmersclub.org">Email Us</a> |
+      <a href="https://www.farmers.gov" target="_blank">USDA Resources</a><br>
+      &copy; 2025 Future Farmers Club | Designed by Austin D.
+    </p>
+  </footer>
+</body>
+</html>
+
+
