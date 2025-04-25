@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | Black Goose Bistro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #57b1dc;
+    }
+
+    .about-section {
+      padding: 60px 5%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .about-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #57b1dc;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: flex-start;
+    }
+
+    .about-text {
+      flex: 1 1 300px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .about-img {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+
+    .about-img img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f0f0f0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 700px) {
+      .about-title {
+        font-size: 2rem;
+      }
+
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-img img {
+        margin-top: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://austindoran1.github.io/fid/bistro/blackgoose.png" alt="Black Goose Bistro Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="jenskitchen.html">Jen's Kitchen</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h1 class="about-title">About Black Goose Bistro</h1>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          Black Goose Bistro began as a neighborhood favorite in Seekonk, MA, serving up locally inspired dishes
+          in a welcoming setting. Founded with the belief that great food brings people together,
+          we focus on fresh ingredients, and friendly service.
+        </p>
+        <p>
+          Whether you’re grabbing lunch with friends or catering a special event, we aim to make every meal feel memorable.
+          We also take pride in our seasonal menus, showcasing the best from nearby farms.
+        </p>
+        <p>
+          Thank you for being a part of our story. We’re here to feed your hunger and your heart — one slice at a time.
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="https://austindoran1.github.io/fid/bistronew/001-toro-pizza-discover-boho-style-in-albanian-restaurant-design-1050x788.avif" alt="Black Goose Bistro Story Image">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Black Goose Bistro
+  </footer>
+
+</body>
+</html>
+
+

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | Black Goose Bistro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #57b1dc;
+    }
+
+    .menu-section {
+      padding: 60px 5%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .menu-section h1 {
+      font-size: 2.5rem;
+      color: #57b1dc;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .menu-category {
+      margin-bottom: 50px;
+    }
+
+    .menu-category h2 {
+      font-size: 1.8rem;
+      color: #333;
+      border-bottom: 2px solid #57b1dc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .menu-item {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      padding: 20px;
+    }
+
+    .menu-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #222;
+    }
+
+    .menu-item p {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .menu-item .price {
+      font-weight: bold;
+      color: #57b1dc;
+      font-size: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .menu-section h1 {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://austindoran1.github.io/fid/bistro/blackgoose.png" alt="Black Goose Bistro Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="jenskitchen.html">Jen's Kitchen</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-section">
+    <h1>Our Menu</h1>
+
+    <div class="menu-category">
+      <h2>Lunch</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Turkey Avocado Wrap</h3>
+          <p>Roasted turkey, avocado, lettuce, tomato, and garlic aioli in a whole wheat wrap.</p>
+          <p class="price">$9.95</p>
+        </div>
+        <div class="menu-item">
+          <h3>Grilled Veggie Sandwich</h3>
+          <p>Marinated zucchini, peppers, and goat cheese on sourdough bread.</p>
+          <p class="price">$8.50</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Dinner</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Pan-Seared Salmon</h3>
+          <p>Served with lemon butter sauce, wild rice, and seasonal vegetables.</p>
+          <p class="price">$16.95</p>
+        </div>
+        <div class="menu-item">
+          <h3>Herb-Crusted Chicken</h3>
+          <p>With roasted potatoes and garlic green beans.</p>
+          <p class="price">$14.75</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-category">
+      <h2>Pizza</h2>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <h3>Classic Margherita</h3>
+          <p>Tomato sauce, mozzarella, and fresh basil.</p>
+          <p class="price">$11.00</p>
+        </div>
+        <div class="menu-item">
+          <h3>Goose Special</h3>
+          <p>Pepperoni, mushrooms, onions, and extra cheese.</p>
+          <p class="price">$12.50</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Black Goose Bistro
+  </footer>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News | Black Goose Bistro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #57b1dc;
+    }
+
+    .news-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 0 5%;
+    }
+
+    .news-title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #57b1dc;
+      margin-bottom: 40px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .news-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .news-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .news-card p {
+      color: #555;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .news-card .date {
+      font-size: 0.85rem;
+      color: #999;
+      margin-bottom: 10px;
+    }
+
+    .news-card a {
+      text-decoration: none;
+      color: #57b1dc;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .news-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f0f0f0;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .news-title {
+        font-size: 2rem;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://austindoran1.github.io/fid/bistro/blackgoose.png" alt="Black Goose Bistro Logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="jenskitchen.html">Jen's Kitchen</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="news-section">
+    <h1 class="news-title">Latest News</h1>
+    <div class="news-grid">
+      <div class="news-card">
+        <div class="date">April 15, 2025</div>
+        <h3>Spring Menu Is Here!</h3>
+        <p>We're excited to announce our new spring lineup featuring seasonal favorites and fresh ingredients from local farms.</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="news-card">
+        <div class="date">March 28, 2025</div>
+        <h3>Black Goose Hosts Charity Night</h3>
+        <p>Thanks to our community, we raised over $2,500 for local food banks. Read how it all came together!</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="news-card">
+        <div class="date">February 10, 2025</div>
+        <h3>Now Offering Online Pizza Orders</h3>
+        <p>Skip the line — order your favorite pizza directly through our website starting today!</p>
+        <a href="https://austindoran1.github.io/fid/pizza.html">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Black Goose Bistro
+  </footer>
+
+</body>
+</html>
+
+
+
+
